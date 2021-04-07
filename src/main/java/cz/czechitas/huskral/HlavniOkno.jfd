@@ -1,0 +1,159 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_202" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "insets rel,hidemode 3"
+			"$columnConstraints": "[fill][grow,fill]"
+			"$rowConstraints": "[grow,fill][grow][][][][][][grow][grow][][]"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 2
+			"title": "moneyH"
+			"$locationPolicy": 1
+			"background": new java.awt.Color( 153, 204, 255, 255 )
+			"minimumSize": new java.awt.Dimension( 30, 49 )
+			auxiliary() {
+				"JavaCodeGenerator.postInitCode": "this.contentPane = (JPanel) this.getContentPane();\nthis.contentPane.setBackground(this.getBackground());\nLayoutManager layout = this.contentPane.getLayout();\nif (layout instanceof MigLayout) {\n    this.migLayoutManager = (MigLayout) layout;\n}\n"
+			}
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1Uvod"
+				"text": "Kolik poslat na Fio?"
+				"foreground": new java.awt.Color( 0, 0, 153, 255 )
+				"font": new java.awt.Font( "Segoe UI", 0, 22 )
+				"horizontalAlignment": 0
+				"background": new java.awt.Color( 204, 204, 255, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0 2 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labRPay"
+				"text": "Romanova výplata"
+				"font": new java.awt.Font( "Segoe UI", 0, 14 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textRPay"
+				"columns": 25
+				"text": "0"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labLPay"
+				"text": "Lucčina výplata"
+				"font": new java.awt.Font( "Segoe UI", 0, 14 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 2"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textLPay"
+				"text": "0"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labRegExp"
+				"text": "Pravidelné platby"
+				"font": new java.awt.Font( "Segoe UI", 0, 14 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 3"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textRegular"
+				"text": "24516"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 3"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labFood"
+				"text": "Jídlo"
+				"font": new java.awt.Font( "Segoe UI", 0, 14 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 4"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFood"
+				"text": "6000"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 4"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labTwisto"
+				"text": "Twisto"
+				"font": new java.awt.Font( "Segoe UI", 0, 14 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 5"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textTwisto"
+				"text": "0"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 5"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labOthers"
+				"text": "Ostatní výdaje"
+				"font": new java.awt.Font( "Segoe UI", 0, 14 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 6"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textOthers"
+				"text": "0"
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 6"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "butResult"
+				"text": "Výpočet"
+				"font": new java.awt.Font( "Segoe UI", 0, 20 )
+				"foreground": new java.awt.Color( 0, 0, 255, 255 )
+				"background": new java.awt.Color( 153, 204, 255, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1GiveMeResult", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 7 2 1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textResult"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "Segoe UI", 0, 28 )
+				"foreground": new java.awt.Color( 0, 0, 0, 255 )
+				"columns": 10
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 8 2 1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labRMoneyLeft"
+				"text": "Romanovi zbude"
+				"font": new java.awt.Font( "Segoe UI", 0, 14 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 9"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textRMoneyLeft"
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 9"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labLMoneyLeft"
+				"text": "Lucce zbude"
+				"font": new java.awt.Font( "Segoe UI", 0, 14 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 10"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textLMoneyLeft"
+				"font": new java.awt.Font( "Segoe UI", 0, 16 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 1 10"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 80, 5 )
+			"size": new java.awt.Dimension( 380, 465 )
+		} )
+	}
+}
